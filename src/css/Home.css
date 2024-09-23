@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Evita que a barra de rolagem horizontal apareça */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #003366;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+blockquote {
+  font-family: 'Lora', serif;
+}
+
+/* Navbar */
+.navbar-expand-lg {
+  background-color: rgba(255, 255, 255, 0.6); /* Navbar transparente */
+  color: black;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  position: fixed; /* Navbar fixa no topo */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que fique acima da imagem */
+  backdrop-filter: blur(5px);
+}
+
+.navbar-brand {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.user {
+  width: 100%;
+}
+
+.user_img {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+.dropdown-menu{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dropdown-item:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+nav .active {
+  color: #003366 !important;
+}
+
+.bi-list {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Perfil {
+  color: black;
+}
+
+/* Página 1 */
+.pag_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/Imagem\ do\ WhatsApp\ de\ 2024-09-13\ à\(s\)\ 17.41.36_b8090aea.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* Escurece a imagem */
+  background-blend-mode: darken; /* Mescla a cor e a imagem */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+.Content_pag_1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; /* Mantém flexível para caber em diferentes tamanhos */
+  align-items: center;
+  width: 100%;
+  max-width: 90%; /* Garante que o conteúdo não ultrapasse a largura da tela */
+  padding: 20px; /* Garante espaçamento interno */
+  margin-top: 30px;
+  box-sizing: border-box;
+  flex-grow: 1; /* Permite que o conteúdo cresça conforme necessário */
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%; /* Adapta o conteúdo à largura da tela */
+}
+
+.infos h4 {
+  font-size: clamp(2rem, 5vw, 50px); /* Responsivo: ajusta o tamanho entre 2rem e 50px */
+  word-break: break-word;
+  white-space: normal;
+  max-width: 100%;
+}
+
+.infos p {
+  font-size: clamp(1rem, 2.5vw, 20px); /* Responsivo: ajusta o tamanho entre 1rem e 20px */
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+}
+
+.seta_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 5vw, 40px); /* Responsivo: ajusta o tamanho da seta */
+  cursor: pointer; /* Torna a seta clicável */
+  margin-top: 20px; /* Adiciona espaço acima da seta */
+}
+
+.pag_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.setas_laterais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content_pag2 {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: auto; /* Certifique-se de que ocupa toda a altura */
+  width: 100%; /* Garante que ocupe toda a largura */
+  padding: 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+.carousel-control-prev {
+  position: static !important;
+}
+
+.side_bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo interno */
+  justify-content: center; /* Centraliza verticalmente */
+  width: auto; /* Ajuste conforme necessário */
+  height: auto; /* Ajuste se necessário */
+  margin: 20px; /* Margem ao redor do card */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1); /* Sombra */
+  border-radius: 20px; /* Cantos arredondados */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  background-color: rgba(229, 229, 229, 0.5); /* Cor de fundo */
+  text-align: center; /* Centraliza o texto */
+}
+
+.carousel-control-next{
+  position: static !important;
+}
+
+
+.side_bg img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o card */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 20px;
+}
+
+.infos_images {
+  margin: 20px;
+  word-wrap: break-word;
+}
+
+.bi-caret-down-fill {
+  font-size: 40px;
+}
+
+.carousel-item {
+  margin-right: 0 !important; /* Remove a margem direita */
+}
+
+.pag_3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.history_alight {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Alinha o conteúdo ao topo para garantir visibilidade */
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px;
+  box-sizing: border-box; /* Inclui padding e margin no cálculo total */
+}
+
+.history_bg {
+  display: flex;
+  flex-direction: column; /* Permite que o texto cresça verticalmente */
+  background-color: rgba(229, 229, 229, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 20px;
+  width: 90%; /* Mantém a largura em 90% */
+  box-sizing: border-box; /* Inclui o padding no cálculo da largura e altura */
+}
+
+.history_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.history_info p {
+  font-size: 20px;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: calc(100% - 120px); /* Subtrai o espaço ocupado pela imagem */
+  overflow-wrap: break-word;
+  min-width: 100%;
+}
+
+.history_info img {
+  margin-top: 20px;
+  right: 20px; /* Adiciona margem à direita */
+  top: 20px; /* Adiciona margem ao topo */
+  max-width: 80%;
+  height: 10%; /* Mantém a proporção da imagem */
+  border-radius: 10px;
+}
+
+.pag_4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.colab_alight {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; /* Alinha o conteúdo ao topo para garantir visibilidade */
+  justify-content: flex-end;
+  width: 100%;
+  margin: 20px;
+  box-sizing: border-box; /* Inclui padding e margin no cálculo total */
+}
+
+.colab_bg {
+  display: flex;
+  flex-direction: column; /* Permite que o texto cresça verticalmente */
+  background-color: rgba(229, 229, 229, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 90%; /* Mantém a largura em 90% */
+  box-sizing: border-box; /* Inclui o padding no cálculo da largura e altura */
+}
+
+.colab_perfil_alight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.colab_perfil{
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.colab_perfil img {
+  margin-right: 20px;
+  max-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.colab_perfil_content {
+  margin-right: 20px;
+}
+
+.colab_perfil_content h4{
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+
+.colab_perfil_content p{
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.pag_5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.depoi_bg {
+  background-color: rgba(229, 229, 229, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  margin: 20px auto; /* Centraliza o contêiner */
+  padding: 20px;
+  width: 100%;
+  max-width: 90%; /* Limita o tamanho máximo do contêiner */
+  box-sizing: border-box;
+}
+
+.depoi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* Permite a quebra de linha, se necessário */
+}
+
+.depoi img {
+  max-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.depoi_content {
+  flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+  min-width: 0; /* Necessário para que o conteúdo de texto não ultrapasse o limite */
+  max-width: calc(100% - 120px); /* Subtrai o tamanho da imagem */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.depoi_content h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.depoi_content p {
+  font-size: 20px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+footer{
+  background-color: rgba(255, 255, 255, 0.6); /* Navbar transparente */
+  color: black;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+}
+
+.logo_footer {
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+}
+
+.footer_alight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other_alight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.contact_alight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.more_alight{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.location_alight {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 2px solid black;
+}
+
+.location_alight i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.location_alight a{
+  color: black;
+  font-size: 20px;
+}
+
+.redes_alight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.redes_alight img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
