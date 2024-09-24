@@ -489,7 +489,7 @@ footer{
   margin-top: 10px;
 }
 
-.redes_alight img {
+.redes img {
   width: 50px;
   height: 50px;
   margin: 5px;
@@ -593,5 +593,103 @@ footer{
   .location_alight {
     max-width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 769px){
+  .pag_2 {
+    padding: 0;
+  }
+  .content_pag2 {
+    padding: 0;
+  }
+  .side_bg {
+    margin: 20px 5px;
+    text-align: left;
+  }
+  .infos_images {
+    margin: 10px 5px;
+  }
+  .infos_images h5 {
+    text-align: center;
+  }
+  .history_bg{
+    padding: 0;
+  }
+  .history_info {
+    padding: 10px;
+  }
+  .history_info p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .history_info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .colab_alight {
+    width: 100%;
+  }
+  .colab_perfil_alight {
+    margin: 0;
+    justify-content: center;
+  }
+  .colab_perfil {
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+  }
+  .colab_perfil img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .colab_perfil_content {
+    margin-right: 0;
+  }
+  .footer_alight {
+    flex-direction: column;
+  }
+  .other_alight {
+    align-items: center;
+  }
+  .contact_alight {
+    align-items: center;
+  }
+  .more_alight {
+    align-items: center;
+  }
+
+  .location_alight {
+    max-width: 100%;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .colab_perfil_alight {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    width: 100%;
+  }
+  
+  .colab_perfil {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: calc(50% - 40px); /* Define a largura para que dois perfis caibam na mesma linha, subtraindo margens */
+    box-sizing: border-box; /* Inclui o padding e a margem no cálculo da largura */
+  }
+  
+  .colab_perfil img {
+    margin-right: 20px;
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    pointer-events: none;
   }
 }
