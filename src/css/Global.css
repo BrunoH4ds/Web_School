@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Evita que a barra de rolagem horizontal apareça */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #003366;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+blockquote {
+  font-family: 'Lora', serif;
+}
+
+/* Navbar */
+.navbar-expand-lg {
+  background-color: rgba(255, 255, 255, 0.6); /* Navbar transparente */
+  color: black;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que fique acima da imagem */
+  backdrop-filter: blur(5px);
+}
+
+.navbar-brand {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.user {
+  width: 100%;
+}
+
+.user_img {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+.dropdown-menu{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dropdown-item:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+nav .active {
+  color: #003366 !important;
+}
+
+.bi-list {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Perfil {
+  color: black;
+}
+
+footer{
+  background-color: rgba(255, 255, 255, 0.6); /* Navbar transparente */
+  color: black;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+}
+
+.logo_footer {
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+}
+
+.footer_alight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other_alight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.contact_alight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.more_alight{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.location_alight {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 2px solid black;
+}
+
+.location_alight i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.location_alight a{
+  color: black;
+  font-size: 20px;
+}
+
+.redes_alight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.redes img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
