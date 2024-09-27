@@ -317,13 +317,14 @@
 @media screen and (max-width: 426px){
   .pag_1 {
     padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
   }
   .Content_pag_1 {
     padding: 0;
     margin-top: 70px;
   }
   .infos {
-    text-align:left;
+    text-align:center;
   }
   .infos h4 {
     text-align: center;

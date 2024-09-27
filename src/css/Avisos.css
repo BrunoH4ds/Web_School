@@ -1,0 +1,30 @@
+.avisos {
+  min-height: 100vh;
+}
+
+.container h1 {
+  margin: 10px 0;
+}
+
+.card {
+  background-color: rgba(229, 229, 229, 0.5) ;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.card-title-alight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title{
+  align-items: center;
+}
+
+.priority-boll {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-bottom: 12px;
+}
