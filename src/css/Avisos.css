@@ -1,5 +1,5 @@
 .avisos {
-  min-height: 100vh;
+  min-height: 62vh;
 }
 
 .container h1 {
@@ -19,6 +19,11 @@
 
 .card-title{
   align-items: center;
+  color: white;
+}
+
+.card-text {
+  color: white;
 }
 
 .priority-boll {

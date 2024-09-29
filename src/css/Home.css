@@ -59,7 +59,6 @@
   justify-content: center;
   align-items: center;
   font-size: clamp(2rem, 5vw, 40px); /* Responsivo: ajusta o tamanho da seta */
-  cursor: pointer; /* Torna a seta clicável */
   margin-top: 20px; /* Adiciona espaço acima da seta */
 }
 
@@ -235,8 +234,9 @@
   margin-right: 20px;
   max-width: 100px;
   height: 100px;
-  border-radius: 50%;
   pointer-events: none;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .colab_perfil_content {
@@ -282,9 +282,10 @@
 .depoi img {
   max-width: 100px;
   height: 100px;
-  border-radius: 50%;
   margin-right: 20px; /* Espaço entre a imagem e o texto */
   pointer-events: none;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .depoi_content {
