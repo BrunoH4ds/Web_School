@@ -1,0 +1,81 @@
+main{
+  min-height: 100vh;
+}
+.depoi_bg {
+  background-color: rgba(229, 229, 229, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  margin: 20px auto; /* Centraliza o contêiner */
+  padding: 20px;
+  width: 100%;
+  max-width: 90%; /* Limita o tamanho máximo do contêiner */
+  box-sizing: border-box;
+}
+
+.depoi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* Permite a quebra de linha, se necessário */
+}
+
+.depoi img {
+  max-width: 100px;
+  height: 100px;
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  pointer-events: none;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.depoi_content {
+  flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+  min-width: 0; /* Necessário para que o conteúdo de texto não ultrapasse o limite */
+  max-width: calc(100% - 240px); /* Subtrai o tamanho da imagem */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.depoi_content h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.depoi_content p {
+  font-size: 20px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+.More_button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.More_button:hover{
+  background-color: #ebebeb;
+}
+
+@media screen and (max-width: 768px){
+  .depoi {
+    display: block;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .depoi img {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .depoi_content {
+    max-width: 100%;
+  }
+}

@@ -114,13 +114,13 @@ nav .active {
 
 footer{
   background-color: rgba(255, 255, 255, 0.6); /* Navbar transparente */
+  position:static;
   color: black;
   padding: 10px;
   box-shadow: 0 0 10px black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
-  top: 0;
   left: 0;
   backdrop-filter: blur(5px);
 }
@@ -210,7 +210,7 @@ footer{
   }
 }
 
-@media screen and (min-width: 426px) and (max-width: 769px){
+@media screen and (min-width: 426px) and (max-width: 768px){
   .footer_alight {
     flex-direction: column;
   }
