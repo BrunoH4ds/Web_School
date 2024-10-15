@@ -1,14 +1,19 @@
 main{
   min-height: 100vh;
 }
+
+.container{
+  max-width: 90%; /* Limita o tamanho máximo do contêiner */
+  margin: 20px auto
+}
+
 .depoi_bg {
   background-color: rgba(229, 229, 229, 0.5);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  margin-top: auto;
   border-radius: 20px;
-  margin: 20px auto; /* Centraliza o contêiner */
   padding: 20px;
   width: 100%;
-  max-width: 90%; /* Limita o tamanho máximo do contêiner */
   box-sizing: border-box;
 }
 
@@ -20,7 +25,11 @@ main{
   flex-wrap: wrap; /* Permite a quebra de linha, se necessário */
 }
 
-.depoi img {
+footer{
+  margin-top: 20px;
+}
+
+.aluno {
   max-width: 100px;
   height: 100px;
   margin-right: 20px; /* Espaço entre a imagem e o texto */
@@ -63,17 +72,42 @@ main{
   background-color: #ebebeb;
 }
 
+.return{
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.return:hover{
+  background-color: #ebebebcb;
+}
+
+.conquists{
+  max-width: 100px;
+  height: 100px;
+  margin-right: 20px; /* Espaço entre a imagem e o texto */ 
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px){
   .depoi {
     display: block;
     flex-direction: column;
     max-width: 100%;
   }
-  .depoi img {
+  .aluno {
     margin: 0;
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+  }
+  .conquists{
+    margin: 0;
+    max-width: 100%;
+    height: auto;
   }
   .depoi_content {
     max-width: 100%;
