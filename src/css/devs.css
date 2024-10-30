@@ -1,0 +1,129 @@
+/* Estilo de cores de fundo e texto */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Barra de navegação */
+.navbar-expand-lg {
+  background-color: rgb(244, 244, 244);
+  box-shadow: none;
+  border-radius: 0;
+}
+
+nav .active,
+.dropdown-item.active,
+.dropdown-item:active {
+  color: black !important;
+  background-color: rgb(244, 244, 244);
+  font-weight: bold;
+}
+
+.dropdown-item:hover{
+  background-color: rgb(216, 216, 216, 0.3);
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0 10px 5px rgb(244, 244, 244);
+  height: 150px;
+}
+header h1 {
+  font-size: 55px;
+}
+
+/* Main content */
+main {
+  min-height: 100vh;
+}
+
+/* Secção de desenvolvedores */
+.devs {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+}
+
+.content,
+.content2 {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.content2 {
+  flex-direction: row-reverse;
+}
+
+/* Estilo da imagem dos desenvolvedores */
+.dev_img {
+  width: 150px;
+  height: 150px;
+  margin: 0 20px;
+  pointer-events: none;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+/* Informações dos desenvolvedores */
+.dev_info h2 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.dev_info p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.dev_info h5 {
+  margin: 0;
+}
+
+/* Rodapé */
+footer {
+  box-shadow: 0 -10px 5px rgb(244, 244, 244);
+  background-color: rgb(244, 244, 244);
+  border-radius: 0;
+}
+
+/* Dispositivos móveis */
+@media (max-width: 580px) {
+  header {
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .devs{
+    margin: 25px 0;
+  }
+
+  .dev_info h2 {
+    font-size: 25px;
+  }
+
+  .dev_info p {
+    font-size: 16px;
+  }
+
+  .dev_img {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .content, .content2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 10px;
+  }
+}
